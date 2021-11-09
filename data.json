@@ -1,0 +1,40 @@
+{
+  "info": {
+    "xPos": {
+      "address": 50352236,
+      "type": "<i2"
+    },
+    "yPos": {
+      "address": 50352232,
+      "type": "<i2"
+    },
+    "pkmn1lvl": {
+      "address": 33702613,
+      "type": ">u4"
+    },
+    "trainerIDNo": {
+      "address": 33685504,
+      "type": "<u4"
+    },
+    "menu_index": {
+      "address": 33795558,
+      "type": "<u2"
+    },
+    "bag_pouch": {
+      "address": 33570433,
+      "type": ">n4"
+    },
+    "bag_item_index": {
+      "address": 50352346,
+      "type": "<u4"
+    },
+    "hasDialog": {
+      "address": 33561538,
+      "type": "|u1"
+    },
+    "mapLocation": {
+      "address": 33759514,
+      "type": "|d2"
+    }
+  }
+}
