@@ -3,8 +3,9 @@ import os
 import hardcoded
 from actions import DO_NOTHING, push
 import constants
+import stateMachine
 
-IS_RANDOMIZED = False
+IS_RANDOMIZED = True
 
 
 def main():
@@ -26,15 +27,8 @@ def main():
     env.reset()
     env.step(DO_NOTHING)
 
-    hardcoded.menu_to_bedroom(env)
-    hardcoded.get_item_from_PC(env)
-    hardcoded.leave_bedroom(env)
-    hardcoded.say_hi_to_mom_on_the_way_out(env)
-    hardcoded.get_up_until_picking_starter(env)
-
-    push(env, DO_NOTHING)
-    push(env, DO_NOTHING)
-    push(env, DO_NOTHING)
+    sm = stateMachine.StateMachine(env)
+    sm.run()
 
     env.render(close=True)
 

@@ -12,6 +12,10 @@
       "address": 33702613,
       "type": ">u4"
     },
+    "pkmn1HP": {
+      "address": 33702618,
+      "type": "<u2"
+    },
     "trainerIDNo": {
       "address": 33685504,
       "type": "<u4"
@@ -35,6 +39,14 @@
     "mapLocation": {
       "address": 33759514,
       "type": "|d2"
+    },
+    "isInWildPkmnBattle": {
+      "address": 50340134,
+      "type": "|u1"
+    },
+    "isInBattle": {
+      "address": 33686742,
+      "type": "|u1"
     }
   }
 }

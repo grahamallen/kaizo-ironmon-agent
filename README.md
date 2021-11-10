@@ -39,7 +39,7 @@ This is where the definition of memory address locations goes so that the Gym Re
 #### `actions.py`
 The way that gym retro handles sending GBA inputs into the ROM while it's running is by using an `actions` array. Based on the configuration we use to load the ROM, and given that we're playing on an emulated GBA, there are 12 possible inputs in the `actions` array. 10 of these inputs correspond to actual GBA buttons: `up`, `down`, `left`, `right`, `a`, `b`, `start`, `select`. The remaining 2 actions do nothing. For convenience, I have added hardcoded `actions` arrays for each of the 10 button inputs and 1 for doing nothing. It's possible to have multiple button inputs in a given `actions` array, but so far that has been unnecessary.
 
-This file also contains the helper functions for `push`ing buttons (a longer button press) and `press`ing buttons (a short button press). These methods try to account for the animation delays associated with moving and/or turning by doing a bunch of `DO_NOTHING` actions after the action's animation begins.
+This file also contains the helper functions for `push`ing buttons (a longer button press) and `tap`ping buttons (a short button press). These methods try to account for the animation delays associated with moving and/or turning by doing a bunch of `DO_NOTHING` actions after the action's animation begins.
 
 #### `constants.py`
 This file contains non-action related constants like map locations or the directory location the files are running in. In the future, this could be a place to add an in-memory cache of things like statistics for various attacks, total stats (BST) per Pokemon, Pokemon typings, favorable type matchups, etc.
@@ -47,8 +47,11 @@ This file contains non-action related constants like map locations or the direct
 #### `hardcoded.py`
 For bits of the game which are always the same, we can hardcode them in this file. Already, there are functions for handling inputs from the beginning of the game through the point where the starter is chosen.
 
+#### `stateMachine.py`
+This is where the state machine lives. Inside of a giant while loop that checks the end condition of the run (our main dying), we branch off into other (mostly hardcoded for now) steps to handle getting from the beginning of the game up until the rival fight. After winning the rival fight, the state machine becomes grossly more complicated, so for now we just have it mash the A button whenever it doesn't know what to do.
+
 #### `logic.py`
-For now, this is the place where any code around "what to do now" should go. This would be where to put a function for `randomly deciding gender`, for `typing in a particular name` for you or your rival, or for `choosing the starter` would go.
+For now, this is the place where any code around "what is the best action for our situation" should go. This would be where to put a function for `determining gender or name`, for `deciding which move to use against a given enemy`, or for `deciding whether to try to switch main pokemon` would go.
 
 #### `main.py`
 This is currently where the hardcoded functions are invoked. Ideally, this would be a very simple file which sets up the ROM environment object and then passes it off to a state machine to handle everything else.
