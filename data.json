@@ -1,24 +1,16 @@
 {
   "info": {
-    "xPos": {
-      "address": 50352236,
-      "type": "<i2"
-    },
-    "yPos": {
-      "address": 50352232,
-      "type": "<i2"
-    },
-    "pkmn1lvl": {
-      "address": 33702613,
-      "type": ">u4"
-    },
-    "pkmn1HP": {
-      "address": 33702618,
-      "type": "<u2"
-    },
-    "trainerIDNo": {
-      "address": 33685504,
+    "map_block_address": {
+      "address": 50352136,
       "type": "<u4"
+    },
+    "trainer_block_address": {
+      "address": 50352140,
+      "type": "<u4"
+    },
+    "map_number": {
+      "address": 33758653,
+      "type": "<u1"
     },
     "menu_index": {
       "address": 33795558,
@@ -26,27 +18,891 @@
     },
     "bag_pouch": {
       "address": 33570433,
-      "type": ">n4"
+      "type": "<n4"
     },
     "bag_item_index": {
       "address": 50352346,
       "type": "<u4"
     },
-    "hasDialog": {
+    "has_dialog": {
       "address": 33561538,
-      "type": "|u1"
+      "type": "<u1"
     },
-    "mapLocation": {
-      "address": 33759514,
-      "type": "|d2"
+    "is_player_moving": {
+      "address": 33779835,
+      "type": "<u1"
     },
-    "isInWildPkmnBattle": {
+    "is_in_wild_pkmn_battle": {
       "address": 50340134,
-      "type": "|u1"
+      "type": "<u1"
     },
-    "isInBattle": {
+    "is_in_battle": {
       "address": 33686742,
-      "type": "|u1"
+      "type": "<u1"
+    },
+    "enemy_pkmn_1_personality_value": {
+      "address": 33701932,
+      "type": "=u4"
+    },
+    "enemy_pkmn_1_ot_id": {
+      "address": 33701936,
+      "type": "=u4"
+    },
+    "enemy_pkmn_1_nickname": {
+      "address": 33701940,
+      "type": "=u10"
+    },
+    "enemy_pkmn_1_language": {
+      "address": 33701950,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_ot_name": {
+      "address": 33701952,
+      "type": "=u7"
+    },
+    "enemy_pkmn_1_markings": {
+      "address": 33701959,
+      "type": "=u1"
+    },
+    "enemy_pkmn_1_checksum": {
+      "address": 33701960,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_????": {
+      "address": 33701962,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_status_condition": {
+      "address": 33702012,
+      "type": "=u4"
+    },
+    "enemy_pkmn_1_level": {
+      "address": 33702016,
+      "type": "=u1"
+    },
+    "enemy_pkmn_1_pokerus_remaining": {
+      "address": 33702017,
+      "type": "=u1"
+    },
+    "enemy_pkmn_1_current_hp": {
+      "address": 33702018,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_total_hp": {
+      "address": 33702020,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_attack": {
+      "address": 33702022,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_defense": {
+      "address": 33702024,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_speed": {
+      "address": 33702026,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_sp_atk": {
+      "address": 33702028,
+      "type": "=u2"
+    },
+    "enemy_pkmn_1_sp_def": {
+      "address": 33702030,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_personality_value": {
+      "address": 33702032,
+      "type": "=u4"
+    },
+    "enemy_pkmn_2_ot_id": {
+      "address": 33702036,
+      "type": "=u4"
+    },
+    "enemy_pkmn_2_nickname": {
+      "address": 33702040,
+      "type": "=u10"
+    },
+    "enemy_pkmn_2_language": {
+      "address": 33702050,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_ot_name": {
+      "address": 33702052,
+      "type": "=u7"
+    },
+    "enemy_pkmn_2_markings": {
+      "address": 33702059,
+      "type": "=u1"
+    },
+    "enemy_pkmn_2_checksum": {
+      "address": 33702060,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_????": {
+      "address": 33702062,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_status_condition": {
+      "address": 33702112,
+      "type": "=u4"
+    },
+    "enemy_pkmn_2_level": {
+      "address": 33702116,
+      "type": "=u1"
+    },
+    "enemy_pkmn_2_pokerus_remaining": {
+      "address": 33702117,
+      "type": "=u1"
+    },
+    "enemy_pkmn_2_current_hp": {
+      "address": 33702118,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_total_hp": {
+      "address": 33702120,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_attack": {
+      "address": 33702122,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_defense": {
+      "address": 33702124,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_speed": {
+      "address": 33702126,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_sp_atk": {
+      "address": 33702128,
+      "type": "=u2"
+    },
+    "enemy_pkmn_2_sp_def": {
+      "address": 33702130,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_personality_value": {
+      "address": 33702132,
+      "type": "=u4"
+    },
+    "enemy_pkmn_3_ot_id": {
+      "address": 33702136,
+      "type": "=u4"
+    },
+    "enemy_pkmn_3_nickname": {
+      "address": 33702140,
+      "type": "=u10"
+    },
+    "enemy_pkmn_3_language": {
+      "address": 33702150,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_ot_name": {
+      "address": 33702152,
+      "type": "=u7"
+    },
+    "enemy_pkmn_3_markings": {
+      "address": 33702159,
+      "type": "=u1"
+    },
+    "enemy_pkmn_3_checksum": {
+      "address": 33702160,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_????": {
+      "address": 33702162,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_status_condition": {
+      "address": 33702212,
+      "type": "=u4"
+    },
+    "enemy_pkmn_3_level": {
+      "address": 33702216,
+      "type": "=u1"
+    },
+    "enemy_pkmn_3_pokerus_remaining": {
+      "address": 33702217,
+      "type": "=u1"
+    },
+    "enemy_pkmn_3_current_hp": {
+      "address": 33702218,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_total_hp": {
+      "address": 33702220,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_attack": {
+      "address": 33702222,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_defense": {
+      "address": 33702224,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_speed": {
+      "address": 33702226,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_sp_atk": {
+      "address": 33702228,
+      "type": "=u2"
+    },
+    "enemy_pkmn_3_sp_def": {
+      "address": 33702230,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_personality_value": {
+      "address": 33702232,
+      "type": "=u4"
+    },
+    "enemy_pkmn_4_ot_id": {
+      "address": 33702236,
+      "type": "=u4"
+    },
+    "enemy_pkmn_4_nickname": {
+      "address": 33702240,
+      "type": "=u10"
+    },
+    "enemy_pkmn_4_language": {
+      "address": 33702250,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_ot_name": {
+      "address": 33702252,
+      "type": "=u7"
+    },
+    "enemy_pkmn_4_markings": {
+      "address": 33702259,
+      "type": "=u1"
+    },
+    "enemy_pkmn_4_checksum": {
+      "address": 33702260,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_????": {
+      "address": 33702262,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_status_condition": {
+      "address": 33702312,
+      "type": "=u4"
+    },
+    "enemy_pkmn_4_level": {
+      "address": 33702316,
+      "type": "=u1"
+    },
+    "enemy_pkmn_4_pokerus_remaining": {
+      "address": 33702317,
+      "type": "=u1"
+    },
+    "enemy_pkmn_4_current_hp": {
+      "address": 33702318,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_total_hp": {
+      "address": 33702320,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_attack": {
+      "address": 33702322,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_defense": {
+      "address": 33702324,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_speed": {
+      "address": 33702326,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_sp_atk": {
+      "address": 33702328,
+      "type": "=u2"
+    },
+    "enemy_pkmn_4_sp_def": {
+      "address": 33702330,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_personality_value": {
+      "address": 33702332,
+      "type": "=u4"
+    },
+    "enemy_pkmn_5_ot_id": {
+      "address": 33702336,
+      "type": "=u4"
+    },
+    "enemy_pkmn_5_nickname": {
+      "address": 33702340,
+      "type": "=u10"
+    },
+    "enemy_pkmn_5_language": {
+      "address": 33702350,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_ot_name": {
+      "address": 33702352,
+      "type": "=u7"
+    },
+    "enemy_pkmn_5_markings": {
+      "address": 33702359,
+      "type": "=u1"
+    },
+    "enemy_pkmn_5_checksum": {
+      "address": 33702360,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_????": {
+      "address": 33702362,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_status_condition": {
+      "address": 33702412,
+      "type": "=u4"
+    },
+    "enemy_pkmn_5_level": {
+      "address": 33702416,
+      "type": "=u1"
+    },
+    "enemy_pkmn_5_pokerus_remaining": {
+      "address": 33702417,
+      "type": "=u1"
+    },
+    "enemy_pkmn_5_current_hp": {
+      "address": 33702418,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_total_hp": {
+      "address": 33702420,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_attack": {
+      "address": 33702422,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_defense": {
+      "address": 33702424,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_speed": {
+      "address": 33702426,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_sp_atk": {
+      "address": 33702428,
+      "type": "=u2"
+    },
+    "enemy_pkmn_5_sp_def": {
+      "address": 33702430,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_personality_value": {
+      "address": 33702432,
+      "type": "=u4"
+    },
+    "enemy_pkmn_6_ot_id": {
+      "address": 33702436,
+      "type": "=u4"
+    },
+    "enemy_pkmn_6_nickname": {
+      "address": 33702440,
+      "type": "=u10"
+    },
+    "enemy_pkmn_6_language": {
+      "address": 33702450,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_ot_name": {
+      "address": 33702452,
+      "type": "=u7"
+    },
+    "enemy_pkmn_6_markings": {
+      "address": 33702459,
+      "type": "=u1"
+    },
+    "enemy_pkmn_6_checksum": {
+      "address": 33702460,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_????": {
+      "address": 33702462,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_status_condition": {
+      "address": 33702512,
+      "type": "=u4"
+    },
+    "enemy_pkmn_6_level": {
+      "address": 33702516,
+      "type": "=u1"
+    },
+    "enemy_pkmn_6_pokerus_remaining": {
+      "address": 33702517,
+      "type": "=u1"
+    },
+    "enemy_pkmn_6_current_hp": {
+      "address": 33702518,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_total_hp": {
+      "address": 33702520,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_attack": {
+      "address": 33702522,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_defense": {
+      "address": 33702524,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_speed": {
+      "address": 33702526,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_sp_atk": {
+      "address": 33702528,
+      "type": "=u2"
+    },
+    "enemy_pkmn_6_sp_def": {
+      "address": 33702530,
+      "type": "=u2"
+    },
+    "pkmn_1_personality_value": {
+      "address": 33702532,
+      "type": "=u4"
+    },
+    "pkmn_1_ot_id": {
+      "address": 33702536,
+      "type": "=u4"
+    },
+    "pkmn_1_nickname": {
+      "address": 33702540,
+      "type": "=u10"
+    },
+    "pkmn_1_language": {
+      "address": 33702550,
+      "type": "=u2"
+    },
+    "pkmn_1_ot_name": {
+      "address": 33702552,
+      "type": "=u7"
+    },
+    "pkmn_1_markings": {
+      "address": 33702559,
+      "type": "=u1"
+    },
+    "pkmn_1_checksum": {
+      "address": 33702560,
+      "type": "=u2"
+    },
+    "pkmn_1_????": {
+      "address": 33702562,
+      "type": "=u2"
+    },
+    "pkmn_1_status_condition": {
+      "address": 33702612,
+      "type": "=u4"
+    },
+    "pkmn_1_level": {
+      "address": 33702616,
+      "type": "=u1"
+    },
+    "pkmn_1_pokerus_remaining": {
+      "address": 33702617,
+      "type": "=u1"
+    },
+    "pkmn_1_current_hp": {
+      "address": 33702618,
+      "type": "=u2"
+    },
+    "pkmn_1_total_hp": {
+      "address": 33702620,
+      "type": "=u2"
+    },
+    "pkmn_1_attack": {
+      "address": 33702622,
+      "type": "=u2"
+    },
+    "pkmn_1_defense": {
+      "address": 33702624,
+      "type": "=u2"
+    },
+    "pkmn_1_speed": {
+      "address": 33702626,
+      "type": "=u2"
+    },
+    "pkmn_1_sp_atk": {
+      "address": 33702628,
+      "type": "=u2"
+    },
+    "pkmn_1_sp_def": {
+      "address": 33702630,
+      "type": "=u2"
+    },
+    "pkmn_2_personality_value": {
+      "address": 33702632,
+      "type": "=u4"
+    },
+    "pkmn_2_ot_id": {
+      "address": 33702636,
+      "type": "=u4"
+    },
+    "pkmn_2_nickname": {
+      "address": 33702640,
+      "type": "=u10"
+    },
+    "pkmn_2_language": {
+      "address": 33702650,
+      "type": "=u2"
+    },
+    "pkmn_2_ot_name": {
+      "address": 33702652,
+      "type": "=u7"
+    },
+    "pkmn_2_markings": {
+      "address": 33702659,
+      "type": "=u1"
+    },
+    "pkmn_2_checksum": {
+      "address": 33702660,
+      "type": "=u2"
+    },
+    "pkmn_2_????": {
+      "address": 33702662,
+      "type": "=u2"
+    },
+    "pkmn_2_status_condition": {
+      "address": 33702712,
+      "type": "=u4"
+    },
+    "pkmn_2_level": {
+      "address": 33702716,
+      "type": "=u1"
+    },
+    "pkmn_2_pokerus_remaining": {
+      "address": 33702717,
+      "type": "=u1"
+    },
+    "pkmn_2_current_hp": {
+      "address": 33702718,
+      "type": "=u2"
+    },
+    "pkmn_2_total_hp": {
+      "address": 33702720,
+      "type": "=u2"
+    },
+    "pkmn_2_attack": {
+      "address": 33702722,
+      "type": "=u2"
+    },
+    "pkmn_2_defense": {
+      "address": 33702724,
+      "type": "=u2"
+    },
+    "pkmn_2_speed": {
+      "address": 33702726,
+      "type": "=u2"
+    },
+    "pkmn_2_sp_atk": {
+      "address": 33702728,
+      "type": "=u2"
+    },
+    "pkmn_2_sp_def": {
+      "address": 33702730,
+      "type": "=u2"
+    },
+    "pkmn_3_personality_value": {
+      "address": 33702732,
+      "type": "=u4"
+    },
+    "pkmn_3_ot_id": {
+      "address": 33702736,
+      "type": "=u4"
+    },
+    "pkmn_3_nickname": {
+      "address": 33702740,
+      "type": "=u10"
+    },
+    "pkmn_3_language": {
+      "address": 33702750,
+      "type": "=u2"
+    },
+    "pkmn_3_ot_name": {
+      "address": 33702752,
+      "type": "=u7"
+    },
+    "pkmn_3_markings": {
+      "address": 33702759,
+      "type": "=u1"
+    },
+    "pkmn_3_checksum": {
+      "address": 33702760,
+      "type": "=u2"
+    },
+    "pkmn_3_????": {
+      "address": 33702762,
+      "type": "=u2"
+    },
+    "pkmn_3_status_condition": {
+      "address": 33702812,
+      "type": "=u4"
+    },
+    "pkmn_3_level": {
+      "address": 33702816,
+      "type": "=u1"
+    },
+    "pkmn_3_pokerus_remaining": {
+      "address": 33702817,
+      "type": "=u1"
+    },
+    "pkmn_3_current_hp": {
+      "address": 33702818,
+      "type": "=u2"
+    },
+    "pkmn_3_total_hp": {
+      "address": 33702820,
+      "type": "=u2"
+    },
+    "pkmn_3_attack": {
+      "address": 33702822,
+      "type": "=u2"
+    },
+    "pkmn_3_defense": {
+      "address": 33702824,
+      "type": "=u2"
+    },
+    "pkmn_3_speed": {
+      "address": 33702826,
+      "type": "=u2"
+    },
+    "pkmn_3_sp_atk": {
+      "address": 33702828,
+      "type": "=u2"
+    },
+    "pkmn_3_sp_def": {
+      "address": 33702830,
+      "type": "=u2"
+    },
+    "pkmn_4_personality_value": {
+      "address": 33702832,
+      "type": "=u4"
+    },
+    "pkmn_4_ot_id": {
+      "address": 33702836,
+      "type": "=u4"
+    },
+    "pkmn_4_nickname": {
+      "address": 33702840,
+      "type": "=u10"
+    },
+    "pkmn_4_language": {
+      "address": 33702850,
+      "type": "=u2"
+    },
+    "pkmn_4_ot_name": {
+      "address": 33702852,
+      "type": "=u7"
+    },
+    "pkmn_4_markings": {
+      "address": 33702859,
+      "type": "=u1"
+    },
+    "pkmn_4_checksum": {
+      "address": 33702860,
+      "type": "=u2"
+    },
+    "pkmn_4_????": {
+      "address": 33702862,
+      "type": "=u2"
+    },
+    "pkmn_4_status_condition": {
+      "address": 33702912,
+      "type": "=u4"
+    },
+    "pkmn_4_level": {
+      "address": 33702916,
+      "type": "=u1"
+    },
+    "pkmn_4_pokerus_remaining": {
+      "address": 33702917,
+      "type": "=u1"
+    },
+    "pkmn_4_current_hp": {
+      "address": 33702918,
+      "type": "=u2"
+    },
+    "pkmn_4_total_hp": {
+      "address": 33702920,
+      "type": "=u2"
+    },
+    "pkmn_4_attack": {
+      "address": 33702922,
+      "type": "=u2"
+    },
+    "pkmn_4_defense": {
+      "address": 33702924,
+      "type": "=u2"
+    },
+    "pkmn_4_speed": {
+      "address": 33702926,
+      "type": "=u2"
+    },
+    "pkmn_4_sp_atk": {
+      "address": 33702928,
+      "type": "=u2"
+    },
+    "pkmn_4_sp_def": {
+      "address": 33702930,
+      "type": "=u2"
+    },
+    "pkmn_5_personality_value": {
+      "address": 33702932,
+      "type": "=u4"
+    },
+    "pkmn_5_ot_id": {
+      "address": 33702936,
+      "type": "=u4"
+    },
+    "pkmn_5_nickname": {
+      "address": 33702940,
+      "type": "=u10"
+    },
+    "pkmn_5_language": {
+      "address": 33702950,
+      "type": "=u2"
+    },
+    "pkmn_5_ot_name": {
+      "address": 33702952,
+      "type": "=u7"
+    },
+    "pkmn_5_markings": {
+      "address": 33702959,
+      "type": "=u1"
+    },
+    "pkmn_5_checksum": {
+      "address": 33702960,
+      "type": "=u2"
+    },
+    "pkmn_5_????": {
+      "address": 33702962,
+      "type": "=u2"
+    },
+    "pkmn_5_status_condition": {
+      "address": 33703012,
+      "type": "=u4"
+    },
+    "pkmn_5_level": {
+      "address": 33703016,
+      "type": "=u1"
+    },
+    "pkmn_5_pokerus_remaining": {
+      "address": 33703017,
+      "type": "=u1"
+    },
+    "pkmn_5_current_hp": {
+      "address": 33703018,
+      "type": "=u2"
+    },
+    "pkmn_5_total_hp": {
+      "address": 33703020,
+      "type": "=u2"
+    },
+    "pkmn_5_attack": {
+      "address": 33703022,
+      "type": "=u2"
+    },
+    "pkmn_5_defense": {
+      "address": 33703024,
+      "type": "=u2"
+    },
+    "pkmn_5_speed": {
+      "address": 33703026,
+      "type": "=u2"
+    },
+    "pkmn_5_sp_atk": {
+      "address": 33703028,
+      "type": "=u2"
+    },
+    "pkmn_5_sp_def": {
+      "address": 33703030,
+      "type": "=u2"
+    },
+    "pkmn_6_personality_value": {
+      "address": 33703032,
+      "type": "=u4"
+    },
+    "pkmn_6_ot_id": {
+      "address": 33703036,
+      "type": "=u4"
+    },
+    "pkmn_6_nickname": {
+      "address": 33703040,
+      "type": "=u10"
+    },
+    "pkmn_6_language": {
+      "address": 33703050,
+      "type": "=u2"
+    },
+    "pkmn_6_ot_name": {
+      "address": 33703052,
+      "type": "=u7"
+    },
+    "pkmn_6_markings": {
+      "address": 33703059,
+      "type": "=u1"
+    },
+    "pkmn_6_checksum": {
+      "address": 33703060,
+      "type": "=u2"
+    },
+    "pkmn_6_????": {
+      "address": 33703062,
+      "type": "=u2"
+    },
+    "pkmn_6_status_condition": {
+      "address": 33703112,
+      "type": "=u4"
+    },
+    "pkmn_6_level": {
+      "address": 33703116,
+      "type": "=u1"
+    },
+    "pkmn_6_pokerus_remaining": {
+      "address": 33703117,
+      "type": "=u1"
+    },
+    "pkmn_6_current_hp": {
+      "address": 33703118,
+      "type": "=u2"
+    },
+    "pkmn_6_total_hp": {
+      "address": 33703120,
+      "type": "=u2"
+    },
+    "pkmn_6_attack": {
+      "address": 33703122,
+      "type": "=u2"
+    },
+    "pkmn_6_defense": {
+      "address": 33703124,
+      "type": "=u2"
+    },
+    "pkmn_6_speed": {
+      "address": 33703126,
+      "type": "=u2"
+    },
+    "pkmn_6_sp_atk": {
+      "address": 33703128,
+      "type": "=u2"
+    },
+    "pkmn_6_sp_def": {
+      "address": 33703130,
+      "type": "=u2"
     }
   }
 }

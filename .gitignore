@@ -1,3 +1,4 @@
 *.gba
 *.state
+*.rnqs
 __pycache__/*

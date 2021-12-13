@@ -11,9 +11,6 @@ PRESS_B = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 PRESS_L = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
 PRESS_R = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-PER_MOVE = 16  # The game is quantized to 16x16 tiles, so each player move action is 16
-
-
 # `push` inputs an action several times so that the character actually performs the input as expected in the game.
 # For navigating menus, or having the character turn without moving, consider using `tap`
 def push(env, action, numSteps=1, shouldRun=True):
@@ -53,7 +50,38 @@ def tap(env, action):
     env.render()
     _, _, _, info = env.step(DO_NOTHING)
     env.render()
+
     return info
+
+
+# Mapping movement in this game can generally be completely hardcoded by mapping out
+# individually walkable paths and then stringing them together. This function naively
+# walks towards a spot by walking directly in a line towards it.
+#
+# Since the position changes as you enter/exit buildings, this is only to be used for
+# navigating within a given room.
+def navigate_within_room(env, x=1, y=1, x_goal=1, y_goal=1):
+    if x > x_goal:
+        push(env, PRESS_LEFT)
+    elif x < x_goal:
+        push(env, PRESS_RIGHT)
+
+    if y > y_goal:
+        push(env, PRESS_UP)
+    elif y < y_goal:
+        push(env, PRESS_DOWN)
+
+
+def mash_DOWN(env):
+    return push(env, PRESS_DOWN)
+
+
+def mash_A(env):
+    return push(env, PRESS_A, numSteps=5)
+
+
+def mash_B(env):
+    return push(env, PRESS_B, numSteps=5)
 
 
 # `OR` provides a logical OR of all entries in the two provided actions

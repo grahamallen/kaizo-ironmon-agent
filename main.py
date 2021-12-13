@@ -1,11 +1,10 @@
 import retro
 import os
-import hardcoded
-from actions import DO_NOTHING, push
+from actions import DO_NOTHING
 import constants
 import stateMachine
 
-IS_RANDOMIZED = True
+IS_RANDOMIZED = False
 
 
 def main():
