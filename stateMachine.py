@@ -111,6 +111,6 @@ class StateMachine:
 
                 # Brock -> End of Mt. Moon
 
-                elif info["has_dialog"]:
+                if info["has_dialog"]:
                     # It's probably fine to mash B whenever you see dialog, right?
                     info = actions.mash_B(self.env)
