@@ -1,5 +1,4 @@
 *.gba
 *.state
 *.rnqs
-data_temp.json
 __pycache__/*

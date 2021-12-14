@@ -31,6 +31,10 @@ def main():
 
     env.render(close=True)
 
+    # Delete the contents of our temp file to clean up
+    with open(os.path.join(constants.SCRIPT_DIR, "data_temp.json"), "w") as f:
+        f.truncate(0)
+
 
 if __name__ == "__main__":
     main()
